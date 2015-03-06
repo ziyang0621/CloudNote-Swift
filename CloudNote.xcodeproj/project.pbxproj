@@ -9,11 +9,16 @@
 /* Begin PBXBuildFile section */
 		852709971AA9682800A734BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852709961AA9682800A734BA /* AppDelegate.swift */; };
 		8527099A1AA9682800A734BA /* CloudNote.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 852709981AA9682800A734BA /* CloudNote.xcdatamodeld */; };
-		8527099C1AA9682800A734BA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8527099B1AA9682800A734BA /* ViewController.swift */; };
 		8527099F1AA9682800A734BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8527099D1AA9682800A734BA /* Main.storyboard */; };
 		852709A11AA9682800A734BA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 852709A01AA9682800A734BA /* Images.xcassets */; };
 		852709A41AA9682800A734BA /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 852709A21AA9682800A734BA /* LaunchScreen.xib */; };
 		852709B01AA9682800A734BA /* CloudNoteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852709AF1AA9682800A734BA /* CloudNoteTests.swift */; };
+		852709BB1AA9686A00A734BA /* CoreDataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 852709BA1AA9686A00A734BA /* CoreDataHelper.swift */; };
+		858C32CC1AA96BF700E783DF /* Note.m in Sources */ = {isa = PBXBuildFile; fileRef = 858C32CB1AA96BF700E783DF /* Note.m */; };
+		858C32CF1AA96BF800E783DF /* Notebook.m in Sources */ = {isa = PBXBuildFile; fileRef = 858C32CE1AA96BF800E783DF /* Notebook.m */; };
+		858C32D21AA96F0700E783DF /* NotebookTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858C32D11AA96F0700E783DF /* NotebookTableViewController.swift */; };
+		858C32D41AA976F100E783DF /* NoteOverviewTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858C32D31AA976F100E783DF /* NoteOverviewTableViewController.swift */; };
+		858C32D61AA97AA000E783DF /* NoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858C32D51AA97AA000E783DF /* NoteViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,13 +36,22 @@
 		852709951AA9682800A734BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		852709961AA9682800A734BA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		852709991AA9682800A734BA /* CloudNote.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CloudNote.xcdatamodel; sourceTree = "<group>"; };
-		8527099B1AA9682800A734BA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8527099E1AA9682800A734BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		852709A01AA9682800A734BA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		852709A31AA9682800A734BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		852709A91AA9682800A734BA /* CloudNoteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CloudNoteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		852709AE1AA9682800A734BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		852709AF1AA9682800A734BA /* CloudNoteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudNoteTests.swift; sourceTree = "<group>"; };
+		852709B91AA9683A00A734BA /* CloudNote.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = CloudNote.entitlements; sourceTree = "<group>"; };
+		852709BA1AA9686A00A734BA /* CoreDataHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataHelper.swift; sourceTree = "<group>"; };
+		858C32C91AA96BF600E783DF /* CloudNote-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CloudNote-Bridging-Header.h"; sourceTree = "<group>"; };
+		858C32CA1AA96BF700E783DF /* Note.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Note.h; sourceTree = "<group>"; };
+		858C32CB1AA96BF700E783DF /* Note.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Note.m; sourceTree = "<group>"; };
+		858C32CD1AA96BF800E783DF /* Notebook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Notebook.h; sourceTree = "<group>"; };
+		858C32CE1AA96BF800E783DF /* Notebook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Notebook.m; sourceTree = "<group>"; };
+		858C32D11AA96F0700E783DF /* NotebookTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotebookTableViewController.swift; sourceTree = "<group>"; };
+		858C32D31AA976F100E783DF /* NoteOverviewTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteOverviewTableViewController.swift; sourceTree = "<group>"; };
+		858C32D51AA97AA000E783DF /* NoteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,13 +93,18 @@
 		852709931AA9682800A734BA /* CloudNote */ = {
 			isa = PBXGroup;
 			children = (
+				852709B91AA9683A00A734BA /* CloudNote.entitlements */,
 				852709961AA9682800A734BA /* AppDelegate.swift */,
-				8527099B1AA9682800A734BA /* ViewController.swift */,
+				852709BA1AA9686A00A734BA /* CoreDataHelper.swift */,
+				858C32D11AA96F0700E783DF /* NotebookTableViewController.swift */,
+				858C32D31AA976F100E783DF /* NoteOverviewTableViewController.swift */,
+				858C32D51AA97AA000E783DF /* NoteViewController.swift */,
 				8527099D1AA9682800A734BA /* Main.storyboard */,
 				852709A01AA9682800A734BA /* Images.xcassets */,
 				852709A21AA9682800A734BA /* LaunchScreen.xib */,
-				852709981AA9682800A734BA /* CloudNote.xcdatamodeld */,
+				858C32D01AA96C3500E783DF /* Datamodel */,
 				852709941AA9682800A734BA /* Supporting Files */,
+				858C32C91AA96BF600E783DF /* CloudNote-Bridging-Header.h */,
 			);
 			path = CloudNote;
 			sourceTree = "<group>";
@@ -113,6 +132,18 @@
 				852709AE1AA9682800A734BA /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		858C32D01AA96C3500E783DF /* Datamodel */ = {
+			isa = PBXGroup;
+			children = (
+				852709981AA9682800A734BA /* CloudNote.xcdatamodeld */,
+				858C32CD1AA96BF800E783DF /* Notebook.h */,
+				858C32CE1AA96BF800E783DF /* Notebook.m */,
+				858C32CA1AA96BF700E783DF /* Note.h */,
+				858C32CB1AA96BF700E783DF /* Note.m */,
+			);
+			name = Datamodel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,6 +195,12 @@
 				TargetAttributes = {
 					852709901AA9682800A734BA = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = P3NF73TYX4;
+						SystemCapabilities = {
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 					852709A81AA9682800A734BA = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -215,8 +252,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8527099C1AA9682800A734BA /* ViewController.swift in Sources */,
+				858C32CC1AA96BF700E783DF /* Note.m in Sources */,
+				858C32CF1AA96BF800E783DF /* Notebook.m in Sources */,
 				852709971AA9682800A734BA /* AppDelegate.swift in Sources */,
+				858C32D61AA97AA000E783DF /* NoteViewController.swift in Sources */,
+				858C32D41AA976F100E783DF /* NoteOverviewTableViewController.swift in Sources */,
+				858C32D21AA96F0700E783DF /* NotebookTableViewController.swift in Sources */,
+				852709BB1AA9686A00A734BA /* CoreDataHelper.swift in Sources */,
 				8527099A1AA9682800A734BA /* CloudNote.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -340,9 +382,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = CloudNote/CloudNote.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = CloudNote/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "CloudNote/CloudNote-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -350,9 +399,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = CloudNote/CloudNote.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = CloudNote/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "CloudNote/CloudNote-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -409,6 +464,7 @@
 				852709B51AA9682800A734BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		852709B61AA9682800A734BA /* Build configuration list for PBXNativeTarget "CloudNoteTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +473,7 @@
 				852709B81AA9682800A734BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
